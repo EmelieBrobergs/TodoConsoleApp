@@ -25,11 +25,11 @@ namespace TodoApp
             Title = title;
         }
 
-        public override string ToString() //whyyy?
+        public override string ToString()
         {
-            if (IsDone)
+            if (IsDone) // om bool är true
             {
-                return Title + "| är klar";
+                return Title + " | är klar";
             }
             else
             {
