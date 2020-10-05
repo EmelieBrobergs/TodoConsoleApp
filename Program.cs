@@ -16,6 +16,15 @@ namespace TodoApp
 
             todoManager.SetTodoItem(0, true);
             todoManager.RemoveTodoItem(1);
+
+            writeListToConsole(todoManager.ListTodoItems());
+        }
+        private static void writeListToConsole(List<string> listString)
+        {
+            foreach (string toWrite in listString)
+            {
+                Console.WriteLine(toWrite);
+            }
         }
     }
 }
